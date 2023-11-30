@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <include
+        ohos:id="$+id:header_disc"
+        ohos:height="match_content"
+        ohos:layout="$layout:header_disc"
+        ohos:width="match_content"
+        ohos:align_parent_top="true"/>
+
+    <!--中间菜单栏-->
+    <DirectionalLayout
+        ohos:below="$id:header_disc"
+        ohos:top_padding="15vp"
+        ohos:bottom_margin="60vp"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="#f6f6f8"
+        ohos:orientation="horizontal">
+
+        <!--左侧一级分类-->
+        <ScrollView
+            ohos:id="$+id:first_category_sc"
+            ohos:height="match_content"
+            ohos:width="88vp">
+
+            <DirectionalLayout
+                ohos:id="$+id:first_category_layout"
+                ohos:height="match_content"
+                ohos:width="88vp"
+                ohos:orientation="vertical">
+
+                <!--插入一级分类的模板-->
+
+            </DirectionalLayout>
+        </ScrollView>
+
+        <!--右侧具体的咖啡菜单-->
+        <ScrollView
+            ohos:id="$+id:coffee_menu_sc"
+            ohos:left_margin="8vp"
+            ohos:height="match_content"
+            ohos:width="264vp"
+            ohos:background_element="#fff">
+
+            <DirectionalLayout
+                ohos:id="$+id:coffee_layout"
+                ohos:height="match_content"
+                ohos:width="264vp"
+                ohos:orientation="vertical">
+
+                <!--每一个大类底下所有咖啡-->
+
+            </DirectionalLayout>
+        </ScrollView>
+    </DirectionalLayout>
+
+    <!--底部导航栏-->
+    <DirectionalLayout
+        ohos:id="$+id:bottom_layout"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:align_parent_bottom="true"
+        ohos:orientation="horizontal">
+
+    </DirectionalLayout>
+
+    <!--右侧已点点餐图标-->
+    <DependentLayout
+        ohos:visibility="visible"
+        ohos:id="$+id:btn_cart"
+        ohos:bottom_margin="80vp"
+        ohos:background_element="$graphic:diancan"
+        ohos:align_parent_bottom="true"
+        ohos:align_parent_right="true"
+        ohos:height="68vp"
+        ohos:width="68vp">
+        <Image
+            ohos:scale_mode="stretch"
+            ohos:center_in_parent="true"
+            ohos:image_src="$media:luckin"
+            ohos:height="40vp"
+            ohos:width="40vp"/>
+    </DependentLayout>
+
+    <!--底部结算栏-->
+    <DirectionalLayout
+        ohos:id="$+id:menu_info_dl"
+        ohos:visibility="hide"
+        ohos:bottom_margin="80vp"
+        ohos:align_parent_bottom="true"
+        ohos:align_parent_right="true"
+        ohos:height="94vp"
+        ohos:background_element="$graphic:cart"
+        ohos:width="340vp"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:id="$+id:discount_txt"
+            ohos:margin="6vp"
+            ohos:height="16vp"
+            ohos:width="match_parent"
+            ohos:text="配送费6元，再买24.6元立减3元"
+            ohos:text_alignment="center"
+            ohos:text_weight="600"
+            ohos:text_size="16fp"
+            ohos:text_color="#080e89"/>
+
+        <DirectionalLayout
+            ohos:id="$+id:cart_dl"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:bottom_margin="6vp"
+            ohos:background_element="$graphic:count"
+            ohos:orientation="horizontal">
+
+            <Image
+                ohos:margin="10vp"
+                ohos:height="40vp"
+                ohos:width="60vp"
+                ohos:scale_mode="zoom_center"
+                ohos:clip_alignment="center"
+                ohos:image_src="$media:luckin"/>
+
+            <DirectionalLayout
+                ohos:top_margin="10vp"
+                ohos:bottom_margin="10vp"
+                ohos:height="match_parent"
+                ohos:width="180vp"
+                ohos:orientation="vertical">
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:orientation="horizontal">
+                    <Text
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="预计到手 "
+                        ohos:text_alignment="center"
+                        ohos:text_size="13fp"/>
+
+                    <Text
+                        ohos:id="$+id:total_price"
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:text="￥0"
+                        ohos:text_alignment="center"
+                        ohos:text_size="13fp"
+                        ohos:text_weight="800"
+                        ohos:text_color="#e65638"/>
+
+                </DirectionalLayout>
+
+                <Text
+                    ohos:top_margin="2vp"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="已享受更低优惠，共减免￥17.6"
+                    ohos:text_size="12fp"
+                    ohos:text_alignment="center"
+                    ohos:text_color="#9d9d9f"/>
+
+            </DirectionalLayout>
+
+            <Button
+                ohos:text_color="#fff"
+                ohos:text="去结算"
+                ohos:text_size="16fp"
+                ohos:align_parent_right="true"
+                ohos:background_element="$graphic:count_button"
+                ohos:height="match_parent"
+                ohos:width="match_parent"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <!--已点咖啡数量图标-->
+    <DirectionalLayout
+        ohos:id="$+id:coffee_num_dl"
+        ohos:visibility="hide"
+        ohos:left_margin="70fp"
+        ohos:bottom_margin="125vp"
+        ohos:align_parent_bottom="true"
+        ohos:background_element="$graphic:coffee_num"
+        ohos:height="20vp"
+        ohos:width="20vp">
+        <Text
+            ohos:layout_alignment="center"
+            ohos:id="$+id:dot_title"
+            ohos:center_in_parent="true"
+            ohos:text_color="#fff"
+            ohos:text_size="16vp"
+            ohos:text="0"
+            ohos:height="match_content"
+            ohos:width="match_content"/>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:visibility="hide"
+        ohos:background_element="#fff"
+        ohos:id="$+id:coffee_order"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:align_parent_bottom="true"
+        ohos:bottom_margin="152vp">
+
+    </DirectionalLayout>
+
+</DependentLayout>

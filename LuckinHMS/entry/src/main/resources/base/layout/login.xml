@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#f6f6f6"
+    ohos:orientation="vertical">
+
+    <!--上面的登录标题栏-->
+    <DependentLayout
+        ohos:padding="8vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+
+        <Image
+            ohos:center_in_parent="true"
+            ohos:align_parent_left="true"
+            ohos:height="20vp"
+            ohos:width="20vp"
+            ohos:image_src="$media:arrowLeft"
+            ohos:clip_alignment="right"
+            ohos:scale_mode="zoom_center"/>
+
+        <Text
+            ohos:center_in_parent="true"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="登录"
+            ohos:text_color="#232323"
+            ohos:text_size="20fp"/>
+    </DependentLayout>
+
+    <DirectionalLayout
+        ohos:top_margin="20vp"
+        ohos:background_element="#fff"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:alignment="horizontal_center"
+        ohos:orientation="vertical">
+
+
+        <DirectionalLayout
+            ohos:top_margin="40vp"
+            ohos:height="match_content"
+            ohos:width="match_content">
+            <Image
+                ohos:id="$+id:avatar_img"
+                ohos:height="80vp"
+                ohos:width="80vp"
+                ohos:scale_mode="stretch"
+                ohos:image_src="$media:avatar"/>
+        </DirectionalLayout>
+
+        <Text
+            ohos:top_margin="8vp"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text = "一只安慕嘻"
+            ohos:text_size="14fp"
+            ohos:text_alignment="center"/>
+
+        <Text
+            ohos:top_margin="6vp"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="欢迎回来"
+            ohos:text_size="13fp"
+            ohos:text_color="#737373"
+            ohos:text_alignment="center"/>
+
+        <Button
+            ohos:top_margin="80vp"
+            ohos:height="42vp"
+            ohos:width="300vp"
+            ohos:background_element="$graphic:button_weixin"
+            ohos:text="微信一键登录"
+            ohos:text_size="15fp"
+            ohos:text_color="#f0fffc"
+            ohos:text_alignment="center"/>
+
+        <Button
+            ohos:id="$+id:telephone_login_btn"
+            ohos:top_margin="28vp"
+            ohos:height="42vp"
+            ohos:width="300vp"
+            ohos:background_element="$graphic:button_telephone"
+            ohos:text="手机号登录"
+            ohos:text_size="15fp"
+            ohos:text_color="#f0fffc"
+            ohos:text_alignment="center"/>
+
+    </DirectionalLayout>
+    
+
+</DirectionalLayout>

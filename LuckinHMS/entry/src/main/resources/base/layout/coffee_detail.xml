@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <!--中间滑动内容-->
+    <ScrollView
+        ohos:rebound_effect="true"
+        ohos:height="670vp"
+        ohos:width="360vp"
+        ohos:bottom_margin="110vp">
+
+        <DependentLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <PageSlider
+                ohos:id="$+id:coffee_detail_pageSlider"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"/>
+
+            <DependentLayout
+                ohos:id="$+id:star_dl"
+                ohos:height="50vp"
+                ohos:width="50vp"
+                ohos:background_element="$graphic:star_taste"
+                ohos:align_parent_right="true"
+                ohos:right_margin="30vp"
+                ohos:top_margin="205vp">
+                <Image
+                    ohos:image_src="$media:star"
+                    ohos:center_in_parent="true"
+                    ohos:scale_mode="stretch"
+                    ohos:height="30vp"
+                    ohos:width="30vp"/>
+            </DependentLayout>
+
+            <Text
+                ohos:align_parent_right="true"
+                ohos:right_margin="26vp"
+                ohos:top_margin="260vp"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="收藏口味"
+                ohos:text_color="#6a6a6a"
+                ohos:text_alignment="center"
+                ohos:text_size="16fp"/>
+
+
+            <Text
+                ohos:id="$+id:coffee_title"
+                ohos:below="$id:coffee_detail_pageSlider"
+                ohos:margin="8vp"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="狠狠爱你可可鸳鸯"
+                ohos:text_size="24fp"
+                ohos:text_color="#323232"
+                ohos:text_weight="600"
+                ohos:text_alignment="center"/>
+
+            <!--温度选择-->
+            <DirectionalLayout
+                ohos:id="$+id:temperature_choose"
+                ohos:below="$id:coffee_title"
+                ohos:height="40vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:left_margin="8vp"
+                ohos:top_margin="10vp">
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="温度"
+                    ohos:text_size="18fp"
+                    ohos:text_color="#323232"
+                    ohos:text_weight="600"
+                    ohos:text_alignment="center"/>
+
+                <Button
+                    ohos:id="$+id:tem1"
+                    ohos:left_margin="20vp"
+                    ohos:height="match_parent"
+                    ohos:width="90vp"
+                    ohos:text="冰"
+                    ohos:text_size="14fp"
+                    ohos:text_color="#6a6a6a"
+                    ohos:text_alignment="center"/>
+
+                <Button
+                    ohos:id="$+id:tem2"
+                    ohos:background_element="$graphic:temperature_choose"
+                    ohos:left_margin="7vp"
+                    ohos:height="match_parent"
+                    ohos:width="90vp"
+                    ohos:text="热"
+                    ohos:text_size="14fp"
+                    ohos:text_color="#242995"
+                    ohos:text_alignment="center"/>
+
+            </DirectionalLayout>
+
+            <!--糖度选择-->
+            <DirectionalLayout
+                ohos:id="$+id:sweet_choose"
+                ohos:below="$id:temperature_choose"
+                ohos:height="40vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:left_margin="8vp"
+                ohos:top_margin="10vp">
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="糖度"
+                    ohos:text_size="18fp"
+                    ohos:text_color="#323232"
+                    ohos:text_weight="600"
+                    ohos:text_alignment="center"/>
+
+                <Button
+                    ohos:id="$+id:sweet1"
+                    ohos:background_element="$graphic:temperature_choose"
+                    ohos:left_margin="20vp"
+                    ohos:height="match_parent"
+                    ohos:width="90vp"
+                    ohos:text="不另外加糖"
+                    ohos:text_size="14fp"
+                    ohos:text_color="#242995"
+                    ohos:text_alignment="center"/>
+
+                <Button
+                    ohos:id="$+id:sweet2"
+                    ohos:left_margin="7vp"
+                    ohos:height="match_parent"
+                    ohos:width="90vp"
+                    ohos:text="半糖"
+                    ohos:text_size="14fp"
+                    ohos:text_color="#6a6a6a"
+                    ohos:text_alignment="center"/>
+
+                <Button
+                    ohos:id="$+id:sweet3"
+                    ohos:left_margin="7vp"
+                    ohos:height="match_parent"
+                    ohos:width="90vp"
+                    ohos:text="标准糖"
+                    ohos:text_size="14fp"
+                    ohos:text_color="#6a6a6a"
+                    ohos:text_alignment="center"/>
+            </DirectionalLayout>
+
+            <!--商品详情-->
+            <DirectionalLayout
+                ohos:below="$id:sweet_choose"
+                ohos:padding="3vp"
+                ohos:top_margin="4vp"
+                ohos:left_margin="14vp"
+                ohos:right_margin="14vp"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:background_element="$graphic:common_background">
+
+                <Text
+                    ohos:bottom_margin="6vp"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="商品详情"
+                    ohos:text_size="15vp"
+                    ohos:text_color="#333"
+                    ohos:text_alignment="center"/>
+
+                <Image
+                    ohos:height="600vp"
+                    ohos:width="match_parent"
+                    ohos:image_src="$media:detail1"
+                    ohos:scale_mode="stretch"/>
+
+                <Image
+                    ohos:height="400vp"
+                    ohos:width="match_parent"
+                    ohos:image_src="$media:detail2"
+                    ohos:scale_mode="stretch"/>
+
+                <Image
+                    ohos:height="340vp"
+                    ohos:width="match_parent"
+                    ohos:image_src="$media:detail3"
+                    ohos:scale_mode="stretch"/>
+
+                <Image
+                    ohos:height="600vp"
+                    ohos:width="match_parent"
+                    ohos:image_src="$media:detail4"
+                    ohos:scale_mode="stretch"/>
+
+            </DirectionalLayout>
+        </DependentLayout>
+
+    </ScrollView>
+
+    <!--底部购买栏-->
+    <DirectionalLayout
+        ohos:height="110vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:left_padding="15vp"
+        ohos:right_margin="15vp"
+        ohos:top_padding="15vp"
+        ohos:bottom_padding="2vp"
+        ohos:align_parent_bottom="true">
+
+        <DependentLayout
+            ohos:height="44vp"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <DirectionalLayout
+                ohos:height="44vp"
+                ohos:width="240vp"
+                ohos:orientation="vertical">
+                <Text
+                    ohos:id="$+id:total_price"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="￥18"
+                    ohos:text_color="#dd5810"
+                    ohos:text_weight="700"
+                    ohos:text_size="18fp"
+                    ohos:text_alignment="center"/>
+
+                <Text
+                    ohos:id="$+id:buy_info"
+                    ohos:top_margin="3vp"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text="厚乳拿铁￥18+热￥0+不另外加糖￥0"
+                    ohos:text_color="#727272"
+                    ohos:truncation_mode="ellipsis_at_end"
+                    ohos:text_size="11fp"
+                    ohos:text_alignment="center"/>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:align_parent_right="true"
+                ohos:orientation="horizontal">
+
+                <Image
+                    ohos:id="$+id:minus2"
+                    ohos:height="32vp"
+                    ohos:width="32vp"
+                    ohos:image_src="$media:minus"
+                    ohos:layout_alignment="vertical_center"
+                    ohos:padding="5vp"
+                    ohos:scale_mode="stretch"/>
+
+                <Text
+                    ohos:layout_alignment="vertical_center"
+                    ohos:id="$+id:num2"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:left_margin="2vp"
+                    ohos:right_margin="2vp"
+                    ohos:text="1"
+                    ohos:text_alignment="vertical_center"
+                    ohos:text_size="20fp"/>
+
+                <Image
+                    ohos:id="$+id:add2"
+                    ohos:height="32vp"
+                    ohos:width="32vp"
+                    ohos:image_src="$media:plus"
+                    ohos:layout_alignment="vertical_center"
+                    ohos:padding="5vp"
+                    ohos:scale_mode="stretch"/>
+            </DirectionalLayout>
+        </DependentLayout>
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="vertical_center"
+            ohos:padding="2vp">
+
+            <Button
+                ohos:background_element="$graphic:btn_buy_now"
+                ohos:left_margin="17vp"
+                ohos:height="34vp"
+                ohos:width="140vp"
+                ohos:text="立即购买"
+                ohos:text_size="18fp"
+                ohos:text_color="#bfa179"
+                ohos:text_alignment="center"/>
+
+            <Button
+                ohos:id="$+id:add_chart"
+                ohos:background_element="$graphic:btn_add_cart"
+                ohos:left_margin="10vp"
+                ohos:height="34vp"
+                ohos:width="140vp"
+                ohos:text="加入购物车"
+                ohos:text_size="18fp"
+                ohos:text_color="#fff"
+                ohos:text_alignment="center"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+</DependentLayout>

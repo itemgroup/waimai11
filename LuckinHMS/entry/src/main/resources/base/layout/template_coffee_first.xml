@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:left_padding="10vp"
+    ohos:right_padding="10vp"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:top_margin="10vp"
+        ohos:id="$+id:category_title"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="人气Top"
+        ohos:text_size="17fp"
+        ohos:text_alignment="center"
+        ohos:text_color="#313131"/>
+
+    <Text
+        ohos:id="$+id:category_info"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:top_margin="6vp"
+        ohos:text="瑞幸必喝爆款，无限回购"
+        ohos:text_size="14fp"
+        ohos:text_alignment="center"
+        ohos:text_color="#9f9f9f"/>
+
+    <Text
+        ohos:visibility="hide"
+        ohos:id="$+id:category_info_second"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:top_margin="2vp"
+        ohos:text="瑞幸必喝爆款，无限回购"
+        ohos:text_size="14fp"
+        ohos:text_alignment="center"
+        ohos:truncation_mode="ellipsis_at_end"
+        ohos:text_color="#9f9f9f"/>
+
+
+</DirectionalLayout>

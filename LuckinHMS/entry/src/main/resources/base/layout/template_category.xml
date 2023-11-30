@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:category_txt"
+        ohos:padding="2vp"
+        ohos:height="54vp"
+        ohos:width="match_parent"
+        ohos:text="谷爱凌推荐"
+        ohos:text_size="18fp"
+        ohos:text_alignment="center"
+        ohos:truncation_mode="ellipsis_at_end"
+        ohos:text_color="#565757"/>
+
+</DirectionalLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="110vp"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal">
+
+    <Image
+        ohos:left_margin="15vp"
+        ohos:layout_alignment="vertical_center"
+        ohos:height="20vp"
+        ohos:width="20vp"
+        ohos:image_src="$media:choose"
+        ohos:scale_mode="zoom_center"
+        ohos:clip_alignment="center"/>
+
+    <Image
+        ohos:left_margin="20vp"
+        ohos:id="$+id:coffee_img"
+        ohos:height="90vp"
+        ohos:width="90vp"
+        ohos:image_src="$media:coffee1"
+        ohos:scale_mode="stretch"
+        ohos:clip_alignment="center"
+        ohos:layout_alignment="center"/>
+
+    <DirectionalLayout
+        ohos:left_margin="14vp"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:top_margin="5vp"
+            ohos:id="$+id:coffee_title"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="厚乳拿铁"
+            ohos:text_color="#313131"
+            ohos:text_size="20fp"
+            ohos:text_alignment="center"/>
+
+        <Text
+            ohos:id="$+id:coffee_taste"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="热/不另外加糖"
+            ohos:text_color="#313131"
+            ohos:text_size="12fp"
+            ohos:text_alignment="center"/>
+
+        <DirectionalLayout
+            ohos:height="26vp"
+            ohos:width="match_parent"
+            ohos:top_margin="28vp"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:id="$+id:coffee_price"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="￥16"
+                ohos:text_color="#dd5810"
+                ohos:text_size="18fp"
+                ohos:text_alignment="center"/>
+
+            <DirectionalLayout
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:alignment="right"
+                ohos:orientation="horizontal">
+
+                <Image
+                    ohos:height="32vp"
+                    ohos:width="32vp"
+                    ohos:image_src="$media:minus"
+                    ohos:layout_alignment="vertical_center"
+                    ohos:padding="5vp"
+                    ohos:scale_mode="stretch"/>
+
+                <Text
+                    ohos:id="$+id:coffee_num"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:left_margin="2vp"
+                    ohos:right_margin="2vp"
+                    ohos:text="1"
+                    ohos:text_alignment="vertical_center"
+                    ohos:text_size="20fp"/>
+
+                <Image
+                    ohos:height="32vp"
+                    ohos:width="32vp"
+                    ohos:image_src="$media:plus"
+                    ohos:layout_alignment="vertical_center"
+                    ohos:padding="5vp"
+                    ohos:scale_mode="stretch"/>
+            </DirectionalLayout>
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

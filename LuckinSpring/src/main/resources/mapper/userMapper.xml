@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.amx.luckincoffee.dao.UserDao">
+
+    <select id="login" resultType="user">
+        select * from user where telephone=#{telephone}
+    </select>
+
+    <insert id="addUser">
+        insert into user(name,telephone) value(#{name},#{telephone})
+    </insert>
+</mapper>

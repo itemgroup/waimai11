@@ -1,0 +1,84 @@
+{
+  "app": {
+    "bundleName": "com.amx.luckin",
+    "vendor": "amx",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
+  "module": {
+    "package": "com.amx.luckin",
+    "name": ".MyApplication",
+    "mainAbility": "com.amx.luckin.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.amx.luckin.MainAbility",
+        "icon": "$media:luckin",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard",
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+            }
+          ]
+        }
+      },
+      {
+        "name": "com.amx.luckin.UserDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:userdataability_description",
+        "type": "data",
+        "uri": "dataability://com.amx.luckin.UserDataAbility"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.amx.luckin.DataAbilityShellProvider.PROVIDER"
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:top_padding="8vp"
+    ohos:left_padding="15vp"
+    ohos:right_padding="15vp"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        ohos:id="$+id:header_location"
+        ohos:height="35vp"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:id="$+id:location"
+            ohos:height="20vp"
+            ohos:width="match_content"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:id="$+id:location_txt"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="三盛国际广场店"
+                ohos:layout_alignment="vertical_center"
+                ohos:text_size="18fp"
+                ohos:text_color="#000"/>
+
+            <Image
+                ohos:left_margin="5vp"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:image_src="$media:ic_more"
+                ohos:layout_alignment="vertical_center"
+                />
+        </DirectionalLayout>
+
+        <Text
+            ohos:below="$id:location"
+            ohos:top_margin="3vp"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="距您196m"
+            ohos:text_size="14fp"
+            ohos:text_color="#636363"/>
+
+        <Switch
+            ohos:id="$+id:choose"
+            ohos:marked="true"
+            ohos:layout_alignment="vertical_center"
+            ohos:align_parent_right="true"
+            ohos:height="30vp"
+            ohos:width="80vp"
+            ohos:text_state_on="自提"
+            ohos:text_state_off="外送"
+            ohos:text_color="#909091"
+            ohos:text_size="14fp"
+            ohos:thumb_element="$graphic:thumb_state_element"
+            ohos:track_element="$graphic:track_state_element"
+            />
+    </DependentLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:info"
+        ohos:below="$id:header_location"
+        ohos:top_margin="15vp"
+        ohos:height="34vp"
+        ohos:width="match_parent"
+        ohos:left_padding="6vp"
+        ohos:right_padding="6vp"
+        ohos:top_padding="4vp"
+        ohos:bottom_padding="4vp"
+        ohos:background_element="#f6f6ff"
+        ohos:orientation="horizontal">
+
+        <Image
+            ohos:weight="1"
+            ohos:height="20vp"
+            ohos:width="0"
+            ohos:image_src="$media:laba"
+            ohos:scale_mode="zoom_center"
+            ohos:layout_alignment="vertical_center"
+            ohos:clip_alignment="center"
+            />
+
+        <Text
+            ohos:weight="8"
+            ohos:layout_alignment="vertical_center"
+            ohos:height="match_content"
+            ohos:width="0"
+            ohos:text="3000吨高质量豆！瑞幸拿下中非最大咖啡生豆贸易中国会更好"
+            ohos:truncation_mode="ellipsis_at_end"
+            ohos:text_alignment="vertical_center"
+            ohos:text_size="13fp"
+            ohos:text_color="#263ccb"
+            />
+
+        <Image
+            ohos:left_margin="5vp"
+            ohos:weight="1"
+            ohos:align_parent_right="true"
+            ohos:height="20vp"
+            ohos:width="0"
+            ohos:image_src="$media:arrowBottom"
+            ohos:scale_mode="zoom_center"
+            ohos:layout_alignment="vertical_center"
+            ohos:clip_alignment="center"
+            />
+    </DirectionalLayout>
+
+    <TabList
+        ohos:id="$+id:tab_list"
+        ohos:below="$id:info"
+        ohos:top_padding="12vp"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+
+        ohos:normal_text_color="#626262"
+
+        ohos:selected_text_color="#333"
+        ohos:selected_tab_indicator_color="#33398e"
+
+        ohos:tab_indicator_type="bottom_line"
+        ohos:selected_tab_indicator_height="2vp"
+
+
+        ohos:text_size="17fp"
+        ohos:text_alignment="center"
+        ohos:fixed_mode="true"/>
+</DependentLayout>
